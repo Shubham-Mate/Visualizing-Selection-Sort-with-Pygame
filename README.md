@@ -2,6 +2,7 @@
 
 ## How to run
 Run the GUI.py file
+
 It is recommended that the amount of numbers generated should not be more than 1000
 
 ## Commits
