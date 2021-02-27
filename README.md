@@ -5,12 +5,14 @@ Added file main.py
 
 #### First Commit
 Added file sort.py
+
 Changes:
 - File Name Changed from main.py to sort.py
 - Changed to an Object Oriented approach
 
 #### Second Commit
 Added file GUI.py
-Changed:
+
+Changes:
 - Added GUI with Tkinter at the beginning to take input from the User for range of number generation and amount of numbers to be generated
 - Added Ability to Pause/Continue the Sort
