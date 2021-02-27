@@ -7,14 +7,14 @@ Run the GUI.py file
 #### Initial Commit
 Added file main.py
 
-#### First Commit
+#### Second Commit
 Added file sort.py
 
 Changes:
 - File Name Changed from main.py to sort.py
 - Changed to an Object Oriented approach
 
-#### Second Commit
+#### Third Commit
 Added file GUI.py
 
 Changes:
