@@ -1,5 +1,9 @@
 # Visualizing Selection Sort with Pygame
 
+## How to run
+Run the GUI.py file
+
+## Commits
 #### Initial Commit
 Added file main.py
 
