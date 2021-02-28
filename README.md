@@ -1,5 +1,8 @@
 # Visualizing Selection Sort with Pygame
 
+## Demo
+![Selection Sort](https://i.makeagif.com/media/2-28-2021/hyOAD7.gif)
+
 ## How to run
 Run the GUI.py file
 
