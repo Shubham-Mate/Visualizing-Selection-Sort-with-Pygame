@@ -3,6 +3,8 @@
 ## Demo
 ![Selection Sort](https://i.makeagif.com/media/2-28-2021/hyOAD7.gif)
 
+![Youtube Video](https://www.youtube.com/watch?v=i-w4dDObyNY)
+
 ## How to run
 Run the GUI.py file
 
