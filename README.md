@@ -3,6 +3,10 @@
 ## How to run
 Run the GUI.py file
 
+Press 'S' to sort the list
+
+Press 'R' to generate a new list
+
 It is recommended that the amount of numbers generated should not be more than 1000
 
 ## Commits
