@@ -6,7 +6,7 @@ import time
 
 
 class Sort:
-	def __init__(self, numval, numrange):
+	def __init__(self, numval):
 		#Window
 		self.WIDTH, self.HEIGHT = 1280, 550
 		self.WIN = pygame.display.set_mode((self.WIDTH, self.HEIGHT))
@@ -19,9 +19,10 @@ class Sort:
 		self.RED = (255, 0, 0)
 
 		# List Generation
-		self.NUMBERS = int(numval)
-		self.NUMBER_RANGE = int(numrange)
-		self.genList = [random.randint(1, self.NUMBER_RANGE) for i in range(self.NUMBERS)]
+		self.NUMBERS = numval
+		self.genList = ([i for i in range(1, self.NUMBERS)]) # Generates a list of numbers from 1 till the input
+		random.shuffle(self.genList) # Shuffles the List
+
 
 		# Width of one bar representing a value
 		self.rect_width = (self.WIDTH/len(self.genList))
@@ -53,7 +54,7 @@ class Sort:
 			color = self.BLUE if (val1 != listInd and val2 !=listInd) else self.GREEN if val2==listInd else self.RED # Decides the color
 				
 			# Draw the bar
-			pygame.draw.rect(self.WIN, color, pygame.Rect(self.rect_width*listInd, (self.HEIGHT-(self.HEIGHT/30)) - (i * (self.HEIGHT/self.NUMBER_RANGE)), self.rect_width, i * (self.HEIGHT/self.NUMBER_RANGE) + (self.HEIGHT-round((self.HEIGHT/30)))))
+			pygame.draw.rect(self.WIN, color, pygame.Rect(self.rect_width*listInd, (self.HEIGHT) - (i * (self.HEIGHT/self.NUMBERS)), self.rect_width, i * (self.HEIGHT/self.NUMBERS) + (self.HEIGHT-round((self.HEIGHT/30)))))
 			listInd += 1
 
 	def draw(self):
@@ -82,7 +83,11 @@ class Sort:
 					self.sort_start = False # Else pause sort
 				time.sleep(0.2) # To avoid multiple key presses
 			if keys_pressed[pygame.K_r]: # If R is pressed
-				self.genList = [random.randint(1, self.NUMBER_RANGE) for i in range(self.NUMBERS)] # Generate new list
+				print(self.genList)
+				 # Generate new list
+				self.genList = ([i for i in range(1, self.NUMBERS)])
+				random.shuffle(self.genList)
+
 				
 				# Reset some variables
 				self.count = 0 
