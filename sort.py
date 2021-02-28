@@ -83,7 +83,6 @@ class Sort:
 					self.sort_start = False # Else pause sort
 				time.sleep(0.2) # To avoid multiple key presses
 			if keys_pressed[pygame.K_r]: # If R is pressed
-				print(self.genList)
 				 # Generate new list
 				self.genList = ([i for i in range(1, self.NUMBERS)])
 				random.shuffle(self.genList)
