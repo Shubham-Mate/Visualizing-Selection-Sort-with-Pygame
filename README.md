@@ -30,6 +30,7 @@ Changes:
 - Implemented proper selection sort. Previous version had an algorithm similiar to selection sort but not selection sort
 - Selection sort can be seen with different coloring
 - created a function which draws the bars for the values instead of directly drawing them in the mainloop
+
 - Added Comments
 
 #### Fifth Commit
@@ -39,3 +40,4 @@ Changes:
 - Changed the GUI to only take amount of numbers as input
 - Instead of generating a random list with the input, a list is generated from the input given and is shuffled
 - Made it so that the input in GUI can only be an integer
+- Fixed issue where the highest value is not fitted properly to the window height
