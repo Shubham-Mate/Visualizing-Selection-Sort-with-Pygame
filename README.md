@@ -30,3 +30,4 @@ Changes:
 - Implemented proper selection sort. Previous version had an algorithm similiar to selection sort but not selection sort
 - Selection sort can be seen with different coloring
 - created a function which draws the bars for the values instead of directly drawing them in the mainloop
+- Fixed issue where the highest value is not fitted properly to the window height
