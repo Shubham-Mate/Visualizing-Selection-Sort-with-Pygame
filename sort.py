@@ -19,8 +19,7 @@ class Sort:
 		self.RED = (255, 0, 0)
 
 		# List Generation
-		self.NUMBERS = int(numval)
-		#self.NUMBER_RANGE = int(numrange)
+		self.NUMBERS = numval
 		self.genList = ([i for i in range(1, self.NUMBERS)]) # Generates a list of numbers from 1 till the input
 		random.shuffle(self.genList) # Shuffles the List
 
