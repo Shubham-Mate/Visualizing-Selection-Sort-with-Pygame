@@ -53,3 +53,9 @@ Changes:
 - Instead of generating a random list with the input, a list is generated from the input given and is shuffled
 - Made it so that the input in GUI can only be an integer
 - Fixed issue where the highest value is not fitted properly to the window height
+
+#### Sixth Commit
+Changes to GUI.py
+
+Changes:
+- Improved the GUI which takes input from the user
