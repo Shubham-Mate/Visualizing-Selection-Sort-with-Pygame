@@ -1,5 +1,6 @@
 import tkinter
-from tkinter import Button, Label, Entry, StringVar
+from tkinter import Button, Label, Entry, StringVar, Frame
+from tkinter.font import Font
 from sort import Sort
 
 
@@ -7,14 +8,27 @@ class GUI:
 	def __init__ (self, title):
 		self.window = tkinter.Tk()
 		self.window.title(title)
-		Label(self.window, text='Number of values').grid(row=0)
+		self.window['bg'] = '#161b22'
+		
+		Label(self.window, text='Number of values', fg='white', bg='#161b22', font=Font(family="Helvetica",size=16)).grid(row=0, padx=10, pady=10)
+		
+		self.text_frame = Frame(self.window, width=100, height=50)
+		self.text_frame.grid(row=0, column=1, padx=10, pady=10)
+		
 		self.number = StringVar()
-		self.number_entry = Entry(self.window, textvariable=self.number)
-		self.number_entry.grid(row=0, column=1)
-		self.btn = Button(self.window, text="Start", width = 15, command=self.getValues)
-		self.btn.grid(row=2, columnspan=2)
+		self.number_entry = Entry(self.text_frame, textvariable=self.number, font=Font(family="Helvetica",size=16)).grid()
+		self.btn = Button(self.window, text="Start", width = 15, fg='white', bg='#0d1117', font=Font(family="Helvetica",size=16), highlightthickness=0, bd=0, activebackground='#040507', activeforeground='white', command=self.getValues)
+		self.btn.bind("<Enter>", self.onEnter)
+		self.btn.bind("<Leave>", self.onLeave)
+		self.btn.grid(row=2, columnspan=2, padx=10, pady=10)
 		self.window.mainloop()
+	
+	def onLeave(self, e):
+		self.btn['background'] = '#0d1117'
 
+	def onEnter(self, e):
+		self.btn['background'] = '#040507'
+	
 	def getValues(self):
 		num_amount = self.number.get()
 		try:
