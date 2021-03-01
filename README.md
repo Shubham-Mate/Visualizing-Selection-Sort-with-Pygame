@@ -1,4 +1,7 @@
-# Visualizing Selection Sort with Pygame
+# Visualizing Sorting Algorithms with Pygame
+
+## Algorithms implemented:-
+- Selection Sort
 
 ## Demo
 ![Selection Sort](https://i.makeagif.com/media/2-28-2021/hyOAD7.gif)
