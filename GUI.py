@@ -36,8 +36,8 @@ class GUI:
 		try:
 			num_amount = int(num_amount)
 			self.window.destroy()
-			sort = Sort(num_amount)
-			sort.draw()
+			self.sort = Sort(num_amount)
+			self.sort.draw()
 		except ValueError:
 			pass
 
