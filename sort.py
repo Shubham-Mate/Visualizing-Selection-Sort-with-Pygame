@@ -1,6 +1,5 @@
 import pygame
 import random
-import math
 import time
 
 
@@ -64,14 +63,6 @@ class Sort:
 			self.genList[i], self.genList[storeVal] = self.genList[storeVal], self.genList[i] # Interchanges the places of value at i and value in storeVal
 			return storeVal, count
 
-	# Bubble Sort
-	def bubble_sort(self, count):
-		count2 = 0
-		for i in range(count, len(self.genList)):
-			for j in range(i, len(self.genList)):
-				if self.genList[j+1] < self.genList[j]:
-					self.genList[j+1], self.genList[j] = self.genList[j], self.genList[j+1]
-			return j, i
 
 	# Draws the Bars representing each value
 	def drawValues(self, val1, val2):
